@@ -47,9 +47,8 @@
 
     configScript = ''
       /* TEXTFOX GENERATED CONFIG */
-
-      const {classes: Cc, interfaces: Ci, utils: Cu} = Components;
-      Cu.import("resource://gre/modules/FileUtils.jsm");
+      const {classes: Cc, interfaces: Ci} = Components;
+      const {FileUtils} = ChromeUtils.importESModule("resource://gre/modules/FileUtils.sys.mjs")
       var updated = false;
 
       // Create nsiFile objects 
